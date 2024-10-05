@@ -1,0 +1,10 @@
+
+<div>
+  <div *ngFor="let book of books$ | async">
+    <p>{{book.name}}</p>
+  </div>
+
+  <div *ngFor="let book of booksMap$ | async">
+    <p>{{book}}</p>
+  </div>
+</div>
