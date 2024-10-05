@@ -1,10 +1,18 @@
 
 <div>
   <div *ngFor="let book of books$ | async">
-    <p>{{book.name}}</p>
+    <p>Book - {{book.name}}</p>
   </div>
 
   <div *ngFor="let book of booksMap$ | async">
-    <p>{{book}}</p>
+    <p>Book Map - {{book}}</p>
+  </div>
+
+  <div>
+    <p>Book Switch {{booksSwitchMap$ | async}}</p>
+  </div>
+
+  <div>
+    <p>Book Concat {{booksConcatMap$ | async}}</p>
   </div>
 </div>
